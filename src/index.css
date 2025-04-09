@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @layer base {
-  @font-face {
-    font-family: "BeVietnamPro";
-    src: url(./Fonts/BeVietnamPro-medium.ttf);
-  }
   img {
     width: 100%;
   }
   .section {
     @apply container mx-auto py-[8rem] px-6;
   }
+}
+@theme {
+  --font-BeVietnamPro: "Be Vietnam Pro", sans-serif;
+  --color-grey: #e5e5dc;
+  --color-glass: rgba(255, 255, 255, 0.45);
+  --color-transparentBlack: rgba(0, 0, 0, 0.7);
+  --breakpoint-ss: 480px;
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1099px;
+
 }
