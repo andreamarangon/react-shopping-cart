@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BiShoppingBag } from 'react-icons/bi'
 
 const Navbar = () => {
+  const [scroll, setScroll] = useState(false)
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScroll(window.scrollY > 20)
+    })
+  }, [])
+
   return (
-    <div className='fixed top-0 left-0 w-full z-20'>
+    <div className={`${scroll ? 'bg-grey shadow-lg' : ''} fixed top-0 left-0 w-full z-20`}>
       <div className='flex items-center justify-between relative container py-4 mx-auto'>
         <h1 className='text-xl font-bold'>MyShop</h1>
         <div className='relative cursor-pointer'>
