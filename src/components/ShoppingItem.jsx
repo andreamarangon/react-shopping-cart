@@ -1,6 +1,9 @@
 import React from 'react'
+import { add } from './State/Slice/CartSlice'
+import { useDispatch } from 'react-redux'
 
 const ShoppingItem = ({ item }) => {
+  const dispatch = useDispatch()
   const { id, image, price, name } = item
   return (
     <div>
@@ -12,7 +15,7 @@ const ShoppingItem = ({ item }) => {
           <div className='text-sm font-bold mb-3'>{name}</div>
           <div className='text-xl font-bold'>€{price}</div>
         </div>
-        <button className='bg-grey p-3'>Aggiungi Al Carrello</button>
+        <button onClick={() => dispatch(add(item))} className='bg-grey p-3'>Aggiungi Al Carrello</button>
       </div>
     </div>
   )
