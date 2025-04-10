@@ -1,8 +1,9 @@
 import React from 'react'
-import { HiChevronLeft } from 'react-icons/hi'
+import { HiChevronLeft, HiTrash } from 'react-icons/hi'
 import { open } from './State/Slice/CheckOutSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import CheckOutItem from './CheckOutItem'
+import { clear } from './State/Slice/CartSlice'
 
 const CheckOut = () => {
   const dispatch = useDispatch()
@@ -30,9 +31,11 @@ const CheckOut = () => {
                       <CheckOutItem key={cartItem.id} cartItem={cartItem} />
                     )
                   })}
-                  <div className="flex justify-between mt-12">
+                  <div className="flex justify-between mt-12 items-center">
                     <div>Spesa Totale: €{total.toFixed(2)}</div>
+                    <HiTrash className='text-3xl cursor-pointer' onClick={() => dispatch(clear())} />
                   </div>
+                  <div className="text-center cursor-pointer bg-black text-white p-3 mt-8">Checkout</div>
                 </>
               )}
           </div>
