@@ -13,7 +13,7 @@ const CartSlice = createSlice({
     add: (state, action) => {
       state.amount++;
       const cartItem = state.cartItems.find((cartItem) => cartItem.id === action.payload.id);
-      cartItem ? (cartItem.amount = state.amount + 1) : state.cartItems.push({ ...action.payload, amount: 1 });
+      cartItem ? (cartItem.amount = cartItem.amount + 1) : state.cartItems.push({ ...action.payload, amount: 1 });
     },
     increase: (state, action) => {
       state.amount++;
