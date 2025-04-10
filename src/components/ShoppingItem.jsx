@@ -15,7 +15,7 @@ const ShoppingItem = ({ item }) => {
           <div className='text-sm font-bold mb-3'>{name}</div>
           <div className='text-xl font-bold'>€{price}</div>
         </div>
-        <button onClick={() => dispatch(add(item))} className='bg-grey p-3'>Aggiungi Al Carrello</button>
+        <button onClick={() => dispatch(add(item))} className='bg-grey p-3 cursor-pointer'>Aggiungi Al Carrello</button>
       </div>
     </div>
   )

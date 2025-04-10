@@ -2,7 +2,7 @@ import item1 from './assets/item1.png';
 import item2 from './assets/item2.png';
 import item3 from './assets/item3.png';
 import item4 from './assets/item4.png';
-import item5 from './assets/item5.jpeg';
+import item5 from './assets/item5.png';
 import item6 from './assets/item6.jpeg';
 import item7 from './assets/item7.jpeg';
 import item8 from './assets/item8.jpeg';
