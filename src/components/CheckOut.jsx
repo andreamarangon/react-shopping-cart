@@ -16,11 +16,11 @@ const CheckOut = () => {
           <div className="flex items-center justify-between">
             <div onClick={() => dispatch(open())} className="flex items-center cursor-pointer">
               <HiChevronLeft className="text-2xl" />
-              <span className="uppercase text-[0.95rem] select-none">Continua a comprare</span>
+              <span className="uppercase text-[0.95rem] select-none">Continua ad acquistare</span>
             </div>
             <div>Carrello ({amount})</div>
           </div>
-          <div>
+          <div className='mt-8'>
             {
               cartItems.length === 0 ? (
                 <div className='uppercase text-center text-3xl'>Il tuo carrello è vuoto</div>

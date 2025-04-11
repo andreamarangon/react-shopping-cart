@@ -3,10 +3,10 @@ import item2 from './assets/item2.png';
 import item3 from './assets/item3.png';
 import item4 from './assets/item4.png';
 import item5 from './assets/item5.png';
-import item6 from './assets/item6.jpeg';
-import item7 from './assets/item7.jpeg';
-import item8 from './assets/item8.jpeg';
-import item9 from './assets/item9.jpeg';
+import item6 from './assets/item6.png';
+import item7 from './assets/item7.png';
+import item8 from './assets/item8.png';
+import item9 from './assets/item9.png';
 
 export const items = [
   {
