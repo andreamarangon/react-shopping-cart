@@ -16,10 +16,10 @@ const ShoppingItem = ({ item }) => {
       </Link>
       <div className='mt-6 flex justify-between items-center px-4'>
         <div>
-          <div className='text-sm font-bold mb-3'>{name}</div>
-          <div className='text-xl font-bold'>€{price}</div>
+          <div className='text-xs sm:text-sm font-bold mb-2 sm:mb-3'>{name}</div>
+          <div className='sm:text-xl font-bold'>€{price}</div>
         </div>
-        <button onClick={() => dispatch(add(item))} className='bg-grey p-3 cursor-pointer'>Aggiungi al carrello</button>
+        <button onClick={() => dispatch(add(item))} className='bg-grey p-3 cursor-pointer text-sm sm:text-base'>Aggiungi al carrello</button>
       </div>
     </div>
   )
