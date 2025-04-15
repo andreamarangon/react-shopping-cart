@@ -11,12 +11,15 @@
 }
 @theme {
   --font-BeVietnamPro: "Be Vietnam Pro", sans-serif;
-  --color-grey: #e5e5dc;
+  --color-grey: #e0e5e9;
+  --color-darkGrey: #9d9da1;
+  --color-lightBlack: #262626;
+  --color-cerulean: #0295db;  
   --color-glass: rgba(255, 255, 255, 0.45);
   --color-transparentBlack: rgba(0, 0, 0, 0.7);
   --breakpoint-ss: 480px;
   --breakpoint-sm: 600px;
-  --breakpoint-md: 1024px;
+  --breakpoint-md: 768px;
   --breakpoint-lg: 1099px;
 
 }

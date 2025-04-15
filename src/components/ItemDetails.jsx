@@ -11,14 +11,14 @@ const ItemDetails = () => {
   const { image, name, price } = item
 
   return (
-    <div className='min-h-screen w-full flex items-center justify-center p-4'>
+    <div className='min-h-screen w-full flex items-center justify-center p-4 bg-white'>
       <div className='lg:flex items-center justify-center'>
         <img src={image} alt={name} className='lg:w-[35rem] md:w-[30rem] w-[25rem]' />
-        <div>
+        <div className='flex lg:block flex-col '>
           <div className='text-3xl font-extrabold mb-4'>{name}</div>
           <div className='mb-4'>€{price}</div>
           <p className='max-w-[400px] mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, impedit? Amet quibusdam recusandae odio tempora incidunt, vel corrupti, unde atque eaque, laboriosam magnam maiores deleniti commodi rem sequi? Laborum, dolorum.</p>
-          <button onClick={() => dispatch(add(item))} className='bg-black text-white p-3'>Aggiungi al carrello</button>
+          <button onClick={() => dispatch(add(item))} className='bg-cerulean hover:opacity-85 rounded-full text-white font-semibold py-3 px-9 cursor-pointer text-sm'>Aggiungi al carrello</button>
         </div>
       </div>
     </div>

@@ -43,7 +43,7 @@ const App = () => {
   }, [cartItems])
 
   return (
-    <div className='font-BeVietnamPro'>
+    <div className='font-BeVietnamPro bg-grey'>
       <RouterProvider router={router}><Layout /></RouterProvider>
     </div>
   )

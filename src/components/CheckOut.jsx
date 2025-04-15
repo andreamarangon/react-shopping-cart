@@ -14,7 +14,7 @@ const CheckOut = () => {
       <div className="h-full bg-grey sm:w-[40rem] min-w-[15rem] overflow-y-auto">
         <div className="p-6">
           <div className="flex items-center justify-between">
-            <div onClick={() => dispatch(open())} className="flex items-center cursor-pointer">
+            <div onClick={() => dispatch(open())} className="flex items-center cursor-pointer hover:text-lightBlack">
               <HiChevronLeft className="text-2xl" />
               <span className="uppercase text-[0.95rem] select-none">Continua ad acquistare</span>
             </div>
@@ -33,9 +33,9 @@ const CheckOut = () => {
                   })}
                   <div className="flex justify-between mt-12 items-center">
                     <div>Spesa Totale: €{total.toFixed(2)}</div>
-                    <HiTrash className='text-3xl cursor-pointer' onClick={() => dispatch(clear())} />
+                    <HiTrash className='text-3xl cursor-pointer hover:text-lightBlack' onClick={() => dispatch(clear())} />
                   </div>
-                  <div className="text-center cursor-pointer bg-black text-white p-3 mt-8">Checkout</div>
+                  <div className="text-center cursor-pointer bg-black text-white p-3 mt-8 rounded-full hover:bg-lightBlack">Checkout</div>
                 </>
               )}
           </div>

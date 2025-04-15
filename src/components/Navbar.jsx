@@ -15,10 +15,10 @@ const Navbar = () => {
   }, [])
 
   return (
-    <div className={`${scroll ? 'bg-grey shadow-lg' : ''} fixed top-0 left-0 w-full z-20`}>
+    <div className={`${scroll ? 'bg-white shadow-lg' : ''} fixed top-0 left-0 w-full z-20`}>
       <div className='flex items-center justify-between relative container py-4 px-2 mx-auto'>
         <Link to='/'>
-          <div className='text-xl font-bold'>MyShop</div>
+          <div className='text-xl font-bold hover:text-lightBlack'>MyShop</div>
         </Link>
         <div onClick={() => dispatch(open())} className='relative cursor-pointer'>
           <BiShoppingBag className='text-3xl opacity-80' />
