@@ -11,7 +11,7 @@ const ShoppingItem = ({ item }) => {
     <div className='bg-white rounded-2xl overflow-hidden'>
       <Link to={`/ItemDetails/${id}`} className='cursor-pointer'>
         <div className='h-[300px] flex items-center justify-center'>
-          <img src={image} alt={name} className='w-[300px] hover:scale-110 transform transition-all duration-150 ease-in-out' />
+          <img src={image} alt={name} className='w-[300px] hover:scale-110 duration-300 ease-in' />
         </div>
       </Link>
       <div className='mt-2 flex flex-col justify-between items-center pb-4 gap-4'>
